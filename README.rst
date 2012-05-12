@@ -13,3 +13,8 @@ Temas:
 - utilitários administrativos
 
   - Django Extensions: http://packages.python.org/django-extensions/
+  
+- integração com Twitter bootstrap
+
+  - https://github.com/earle/django-bootstrap
+  - https://github.com/dyve/django-bootstrap-toolkit
