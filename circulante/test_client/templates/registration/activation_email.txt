@@ -1,0 +1,8 @@
+{% load url from future %}
+Dear user,
+
+Thanks for registering in our site.
+
+To finish the registration process please click the following link
+
+http://{{ site.domain }}{% url 'registration.views.activate' activation_key %}
