@@ -25,3 +25,12 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+# Subline Text
+*.sublime-*
+
+# Sqlite3
+*.sqlite
+
+# Transifex-style local settings
+??-*-local.py
