@@ -1,0 +1,38 @@
+===============================
+Notas durante o desenvolvimento
+===============================
+
+-------------
+
+-------------
+
+Em 19/maio/2012 pesquisei alternativas para integrar o Twitter Bootstrap com
+formulários gerados pelo Django. Eis os projetos que eu encontrei::
+
+Escolhido
+---------
+
+https://github.com/earle/django-bootstrap
+
+
+Testados
+-----------
+
+pinax-theme-bootstrap (https://github.com/pinax/pinax-theme-bootstrap)
+  infelizmente o projeto Pinax não é confiável; muito código e 
+  interdependência entre componentes, mas pouca comunicação dos core 
+  developers com a comunidade e releases muito esporádicos;
+  complicado demais para correr o risco de ter que manter o próprio fork
+
+https://github.com/SoloTodo/django_bootstrap_registration
+
+
+Descartados sumariamente
+------------------------
+
+=================== =============================================      ========================================================================
+Nome do projeto     URL do repositório                                 Pontos negativos
+=================== =============================================      ========================================================================
+django-bootstrap    https://github.com/codasus/django-bootstrap        só 1 commiter; nenhum commit em 6 meses
+django-bootstrapped https://github.com/rbrady/django-bootstrapped      só 1 commiter; nenhum commit em 6 meses; docs não mencionam uso em forms
+                    https://github.com/adieu/django-template-bootstrap só 1 commiter; docs não mencionam uso em forms
