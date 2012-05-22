@@ -1,6 +1,4 @@
 Django==1.4
--e git://github.com/earle/django-bootstrap.git@7761e0f03c4eae81efc350a5e06c973f2c7b704d#egg=bootstrap-dev
-distribute==0.6.24
-django-registration==0.8
 psycopg2==2.4.5
-wsgiref==0.1.2
+django-registration==0.8
+-e git://github.com/earle/django-bootstrap.git@7761e0f03c4eae81efc350a5e06c973f2c7b704d#egg=bootstrap-dev

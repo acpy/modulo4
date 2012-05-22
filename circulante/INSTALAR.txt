@@ -11,11 +11,11 @@ Configuração do banco de dados com PostgreSQL
 Verifique seus poderes para gerenciar o PostgreSQL
 ==================================================
 
-Faça login para conferir se você tem o nome do host, a porta, o login 
+Faça login para conferir se você tem o nome do host, a porta, o login
 e a senha para gerenciar a instância escolhida de PostgreSQL::
 
   $ psql -h localhost -p 5433 -U postgres
-  Password for user postgres: 
+  Password for user postgres:
   psql (9.1.3, server 9.1.2)
   Type "help" for help.
 
@@ -29,17 +29,17 @@ Obs.: a porta padrão do PostgreSQL é 5432; no exemplo usamos a porta 5433.
 Crie um novo usuário no PostgreSQL
 ==================================
 
-Na terminologia do PosgreSQL, um usuário é um "role". Veja como criar um 
+Na terminologia do PosgreSQL, um usuário é um "role". Veja como criar um
 role como uma senha para ele::
 
   $ createuser -h localhost -p 5433 -U postgres -P circ_admin
-  Enter password for new role: 
-  Enter it again: 
+  Enter password for new role:
+  Enter it again:
   Shall the new role be a superuser? (y/n) n
   Shall the new role be allowed to create databases? (y/n) y
   Shall the new role be allowed to create more new roles? (y/n) n
   Password:
-  
+
 Note que a última senha solicitada é a do usuário administrativo ``postgres``.
 
 Crie um database para o projeto
@@ -57,18 +57,14 @@ Crie e ative o ambiente virtual com ``virtualenv``::
   New python executable in mod4.env/bin/python
   Installing distribute.............................................................................................................................................................................................done.
   Installing pip...............done.
-  
+
 Ative o ambiente recém-criado::
 
   $ source mod4.env/bin/activate
-  (mod4.env)$ 
+  (mod4.env)$
 
-Instale os pré-requisitos do projeto::
+Entre no diretório ``«repositorio.git»/circulante`` e instale os pré-requisitos do
+projeto listados no arquivo ``requirements.txt``::
 
-  $ pip install django
-  $ pip install psycopg2
-  $ pip install --extra-index-url=http://dist.pinaxproject.com/dev/ django-user-accounts
-  $ pip install django-forms-bootstrap
+  $ pip install -r requirements.txt
 
-  
-  $ pip install -e git+git://github.com/pinax/pinax-theme-bootstrap-account.git#egg=pinax-tba
