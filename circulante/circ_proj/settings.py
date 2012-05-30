@@ -1,4 +1,4 @@
-# Django settings for circulante project.
+# Django settings for circ_proj project.
 
 import os
 import glob
@@ -96,10 +96,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'circulante.urls'
+ROOT_URLCONF = 'circ_proj.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'circulante.wsgi.application'
+WSGI_APPLICATION = 'circ_proj.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -115,12 +115,12 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # insert circulante applications here
+    # insert circ_proj applications here
     'test_client',
     'bootstrap',
     'registration',
     'bootstrap_registration',
-    'django.contrib.admin',    
+    'django.contrib.admin',
     'django.contrib.admindocs',
 )
 

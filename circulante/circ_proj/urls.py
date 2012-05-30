@@ -6,8 +6,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'circulante.views.home', name='home'),
-    # url(r'^circulante/', include('circulante.foo.urls')),
+    # url(r'^$', 'circ_proj.views.home', name='home'),
+    # url(r'^circ_proj/', include('circ_proj.foo.urls')),
 
     url(r'^accounts/', include('bootstrap_registration.urls')),
 
